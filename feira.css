@@ -1,0 +1,284 @@
+/* 
+	AD 1 - Construção da Página WEB
+	Nome: Lucas Labre de Melo
+	Matrícula: 19213050431
+	Polo: Itaguaí
+*/
+body {
+	background-color: #20bcfc; 
+	color: #FFFF00; 
+	font-size: 16px;	
+	font-family: Stoke, verdana, liberation;
+}
+header, section {display: block;}
+nav {
+	display: block;
+	border-top: 2px solid; 
+	border-bottom: 2px solid;
+	padding-top: 4px; 
+	padding-bottom: 4px;
+	text-align: center;
+	font-weight: bold;
+	font-family: Stoke, Verdana, Liberation;
+}
+	.menu {
+		text-align: center; 
+		margin: 3px auto;
+	}
+	.botao {
+		font-size: 14px; 
+		margin-top: 0px; 
+		margin-bottom: 0px;
+		margin-left: 4px; 
+		margin-right: 4px;
+		padding-top: 5px; 
+		padding-bottom: 5px;
+		padding-left: 4px; 
+		padding-right: 4px;
+		background-color: #FFFF00;
+		width: 100px; 
+		display: inline-block;
+	}
+nav a:link {
+	text-decoration: none; 
+	color: #FF0000;
+}
+nav a:visited {
+	text-decoration: none; 
+	color: #EE0000;
+}
+a:link {
+	text-decoration: none; 
+	color: #FFFF00;
+}
+a:visited{
+	text-decoration: none; 
+	color: #EEEE00;
+}
+.ender {
+	text-align: right; 
+	font-size: 15px; 
+	line-height: 140%; 
+	float: right;
+}
+.imgLogo {
+	max-width:150px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+}
+.apres {
+	display: inline;
+	margin-left: 400px; 
+	text-align: center; 
+	font-size: 18px;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #000;
+	font-size: 3em; 
+	color: #fffdd9;
+}
+	
+/*Estilo da questão 3*/
+
+.listaMoletons {
+	color: #880000; 
+	background-color: #EEDD99;
+	padding: 10px 10px 10px 50px; 
+	margin: 30px 10px 10px 10px;
+	border: 2px solid; 
+	border-color: #000055;
+	line-height: 200%; 
+	list-style-type: upper-roman;
+}
+	ul {
+		color: #880000;
+		line-height: 200%;
+		list-style-type: none;
+	}
+	img {
+		vertical-align: middle;
+	}
+	#preco {
+		color: #EE0000;
+	}
+
+/*Estilo questão 4*/
+
+.tabCamisa {
+	border-collapse: collapse;
+	background-color: #EEDD99;
+	color: #000066;
+	width: 96%;
+	text-align: center;
+	margin: 0 auto;
+	font-family: Stoke, arial, ubuntu;
+}
+	td, th {
+		border: 3px solid;
+		border-color: #000055;
+		padding: 6px 12px 6px 12px;
+	}
+	#titulo {
+		color: #FFFF22;
+		background-color: #447799;
+		font-size: 24px;
+		font-weight: bold;
+	}
+	#linTH {
+		color: #FFFFFF;
+		background-color: #777777;
+		vertical-align: middle;
+		text-align: center;
+	}
+	#colTH {
+		color: #FFFFFF;
+		background-color: #999999;
+		text-align: left;
+	}
+	#preco {
+		color: #EE0000;
+		font-weight: bold;
+		vertical-align: middle;
+	}
+
+/*Estilo questão 5*/
+
+form {
+	width: 1140px;
+	color: #880000;
+	background-color: #EEDD99;
+	padding: 6px 6px 15px 6px;
+	margin: 10px auto;
+	border: 2px solid;
+	border-color: #000055;
+	float: center;
+}
+	.listaCompras {
+		height: 230px;
+		width: 230px;
+		float: right;
+		margin-top: 8px;
+		margin-left: 10px;
+	}
+	.colLabSelProd {
+		width: 260px;
+		height: 40px;
+		float: left;
+	}
+	.colSelProd {
+		width: 160px;
+		float: right;
+	}
+	.linhaProdSel {
+		width: 240px;
+		margin-bottom: 6px;
+		float: left;
+	}
+	.elemEsq {
+		float:left;
+		display: block;
+	}
+	.elemDir {
+		float: none;
+		display: block;
+	}
+	.impMedio {
+		width: 50px;
+	}
+	.botoes {
+		float: none;
+		margin: 20px 10px 0px 10px;
+	}
+
+label.editPastel{
+	display: inline-block;
+	width: 200px;
+}
+	.editBolinho{
+		display: inline-block;
+		width: 120px;
+	}
+	.editBebida{
+		display: inline-block;
+		width: 170px;
+	}
+
+/*ESTILO QUESTÃO 6*/
+
+/*Posicionamento de Fieldsets*/
+.fsPrincipal{
+	width: auto;
+}
+.fsEsq{
+	float: left;
+	display: inline-block;
+	margin: 0px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.fsCentro{
+	float: none;
+	display: inline-block;
+	margin: 0px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.fsDir{
+	float: right;
+	display: inline-block;
+	margin: 0px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+/*Elementos de entrada de valores*/
+.impGrande {
+	width: 440px;
+}
+.impNCC {
+	width: 130px;
+}
+.impTelef {
+	width: 90px;
+}
+.impEnder{
+	width: 200px;
+	height: 60px;
+}
+.numDD {
+	width: 30px;
+}
+.numQD {
+	width: 50px;
+}
+
+/*Posicionamento e tamanho de elementos do formulário*/
+.divLinha {
+	width: 550px;
+	margin-bottom: 6px;
+}
+.colPri {
+	float: left;
+	display: block;
+	width: 90px;
+}
+.colPriCompras {
+	float: left;
+	display: block;
+	width: 86px;
+}
+.colPriPag {
+	float: left;
+	display: block;
+	width: 250px;
+}
+
+/* JavaScript*/
+
+.itens {
+	width: 200px;
+	border: 3px solid;
+	padding: 12px;
+	background-color: #FFFFFF;
+}
+
