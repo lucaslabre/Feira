@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pedidos</title>
+	<meta charset="utf-8" />
+	<base target="_blank" />
+	<link rel="stylesheet" type="text/css" href="feira.css" />
+	<link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet' />
+	<script language="javascript" src="feira.js"></script>
+</head>
+<body>
+	<header>
+		<img class="imgLogo" src="pastel.jpg" />
+		<h1 class="apres">JAPASTEL</h1>
+		<address class="ender">
+			Endereço da feira, 123<br/>
+			Tel: (21) 9xxxx-xxxx<br/>
+			<a href="mailto:contato@email.com">contato@email.com</a>
+		</address>
+	</header>
+	<nav class="menu">
+		<a class="botao" href="Malhama.html">INICIO</a>
+		<a class="botao" href="Moletons.html">ESTOQUE</a>
+		<a class="botao" href="Camisetas.html">DEMANDA</a>
+		<a class="botao" href="Compras.html">COMPRAS</a>
+	</nav>
+	<section>
+		<form method="post" action="dados.html" name="formulario">
+
+			<fieldset class="fsPrincipal">
+				<legend>Pedidos</legend>
+				<fieldset class="fsEsq">
+					<legend>Pasteis</legend>
+					<div><label class="editPastel">Carne</label>
+						<input class="botoes" type="button" name="pastel" id="mais" onclick="soma('pCarne')" value="+1" />
+						<input class="botoes" type="button" name="pastel" id="menos" onclick="subtrai('pCarne')" value="-1" />
+						<input class="impMedio" type="text" id="pCarne" value="0" />
+					</div>
+					<div><label class="editPastel">Queijo</label>
+						<input class="botoes" type="button" name="pastel" value="+1" onclick="soma('pQueijo')"/>
+						<input class="botoes" type="button" name="pastel" value="-1" onclick="subtrai('pQueijo')"/>
+						<input class="impMedio" type="text" id="pQueijo" value="0"/>
+					</div>
+					<div><label class="editPastel">Frango c/ catupiri</label>
+						<input class="botoes" type="button" name="pastel" value="+1" onclick="soma('pFrango')"/>
+						<input class="botoes" type="button" name="pastel" value="-1" onclick="subtrai('pFrango')" />
+						<input class="impMedio" type="text" id="pFrango" value="0"/>
+					</div>
+					<div><label class="editPastel">pizza</label>
+						<input class="botoes" type="button" name="pastel" value="+1" onclick="soma('pPizza')"/>
+						<input class="botoes" type="button" name="pastel" value="-1" onclick="subtrai('pPizza')" />
+						<input class="impMedio" type="text" id="pPizza" value="0" />
+					</div>
+					<div><label class="editPastel">carne seca c/ catupiry</label>
+						<input class="botoes" type="button" name="pastel" value="+1" onclick="soma('pCarneSeca')"/>
+						<input class="botoes" type="button" name="pastel" value="-1" onclick="subtrai('pCarneSeca')" />
+						<input class="impMedio" type="text" id="pCarneSeca" value="0" />
+					</div>
+				</fieldset>
+				
+				<fieldset class="fsCentro">
+					<legend>Bolinhos de aipim:</legend>
+					<div><label class="editBolinho">Carne moída</label>
+						<input class="botoes" type="button" name="bolinho" value="+1" onclick="soma('bCarneMoida')" />
+						<input class="botoes" type="button" name="bolinho" value="-1" onclick="subtrai('bCarneMoida')" />
+						<input class="impMedio" type="text" id="bCarneMoida" value="0" />
+					</div>
+					<div><label class="editBolinho">Carne seca</label>
+						<input class="botoes" type="button" name="bolinho" value="+1" onclick="soma('bCarneSeca')" />
+						<input class="botoes" type="button" name="bolinho" value="-1" onclick="subtrai('bCarneSeca')" />
+						<input class="impMedio" type="text" id="bCarneSeca" value="0" />
+					</div>
+					<div><label class="editBolinho">Queijo</label>
+						<input class="botoes" type="button" name="bolinho" value="+1" onclick="soma('bQueijo')" />
+						<input class="botoes" type="button" name="bolinho" value="-1" onclick="subtrai('bQueijo')" />
+						<input class="impMedio" type="text" id="bQueijo" value="0" />
+					</div>
+					<div><label class="editBolinho">Kibe</label>
+						<input class="botoes" type="button" name="bolinho" value="+1" onclick="soma('kibe')" />
+						<input class="botoes" type="button" name="bolinho" value="-1" onclick="subtrai('kibe')" />
+						<input class="impMedio" type="text" id="kibe" value="0" />
+					</div>
+					<div><label class="editBolinho">Massa</label>
+						<input class="botoes" type="button" name="bolinho" value="+1" onclick="soma('massa')" />
+						<input class="botoes" type="button" name="bolinho" value="-1" onclick="subtrai('massa')" />
+						<input class="impMedio" type="text" id="massa" value="0" />
+					</div>
+				</fieldset>
+
+				<fieldset class="fsDir">
+					<legend>Bebidas:</legend>
+					<div><label class="editBebida">Caldo de cana 1/2L</label>
+						<input class="botoes" type="button" name="bebida" value="+1" onclick="soma('caldoMeio')" />
+						<input class="botoes" type="button" name="bebida" value="-1" onclick="subtrai('caldoMeio')" />
+						<input class="impMedio" type="text" id="caldoMeio" value="0" />
+					</div>
+					<div><label class="editBebida">Caldo de cana 1L</label>
+						<input class="botoes" type="button" name="bebida" value="+1" onclick="soma('caldoLitro')" />
+						<input class="botoes" type="button" name="bebida" value="-1" onclick="subtrai('caldoLitro')" />
+						<input class="impMedio" type="text" id="caldoLitro" value="0" />
+					</div>
+					<div><label class="editBebida">Guaravita</label>
+						<input class="botoes" type="button" name="bebida" value="+1" onclick="soma('guarav')" />
+						<input class="botoes" type="button" name="bebida" value="-1" onclick="subtrai('guarav')" />
+						<input class="impMedio" type="text" id="guarav" value="0" />
+					</div>
+					<div><label class="editBebida">Refrigerante</label>
+						<input class="botoes" type="button" name="bebida" value="+1" onclick="soma('refri')" />
+						<input class="botoes" type="button" name="bebida" value="-1" onclick="subtrai('refri')" />
+						<input class="impMedio" type="text" id="refri" value="0" />
+					</div>
+					<div><label class="editBebida">Matte</label>
+						<input class="botoes" type="button" name="bebida" value="+1" onclick="soma('matte')" />
+						<input class="botoes" type="button" name="bebida" value="-1" onclick="subtrai('matte')" />
+						<input class="impMedio" type="text" id="matte" value="0" />
+					</div>
+					<div><label class="editBebida">Água sem gás</label>
+						<input class="botoes" type="button" name="bebida" value="+1" onclick="soma('aguaS')" />
+						<input class="botoes" type="button" name="bebida" value="-1" onclick="subtrai('aguaS')" />
+						<input class="impMedio" type="text" id="aguaS" value="0" />
+					</div>
+					<div><label class="editBebida">Água com gás</label>
+						<input class="botoes" type="button" name="bebida" value="+1" onclick="soma('aguaC')" />
+						<input class="botoes" type="button" name="bebida" value="-1" onclick="subtrai('aguaC')" />
+						<input class="impMedio" type="text" id="aguaC" value="0" />
+					</div>
+				</fieldset>
+
+			</fieldset>
+			<div class="elemDir"><input class="botoes" type="reset" name="limpar" value="Limpar" />
+			<input class="botoes" type="button" name="enviar" value="Enviar" onclick="valores()" /></div><br/>
+		<form method="post" action="dados.html" name="formulario">
+	</section>
+</body>
+</html>
