@@ -1,16 +1,16 @@
-function soma(ident, ref, valor){
-	var parcial = document.getElementById(ref).value;
-	qtd = parseInt(parcial) + parseInt(1);           // Incrementa 1 na variável total
-	document.getElementById(ref).value = qtd;        // escreve o total do produto vendido
-	document.getElementById("r" + ref).value = qtd * parseFloat(valor);  // multiplica a quantidade pelo valor
+function soma(nome, id, valor){
+	var zero = document.getElementById(id).value;
+	qtd = parseInt(zero) + parseInt(1);           // Incrementa 1 na variável total
+	document.getElementById(id).value = qtd;        // escreve o total do produto vendido
+	document.getElementById("r" + id).value = qtd * parseFloat(valor);  // multiplica a quantidade pelo valor
 
 	// Para somar o valor total de cada produto de cada produto
 	var total = 0;
-	var nome = document.getElementsByName(ident);
-	for (var i = 0; i < nome.length; i++){
-		total += parseFloat(nome[i].value);
+	var nom = document.getElementsByName(nome);
+	for (var i = 0; i < nom.length; i++){
+		total += parseFloat(nom[i].value);
 	}
-	document.getElementById("total" + ident).value = total;	
+	document.getElementById("total" + nome).value = total;	
 
 	// Somar no totalzão
 	var totalFinal = 0;
@@ -21,19 +21,19 @@ function soma(ident, ref, valor){
 	document.getElementById("total").value = totalFinal;
 }
 
-function subtrai(ident, ref, valor){
-	var parcial = document.getElementById(ref).value;
-	qtd = parseInt(parcial) - parseInt(1);
-	document.getElementById(ref).value = qtd;
-	document.getElementById("r" + ref).value = qtd * parseFloat(valor);
+function subtrai(nome, id, valor){
+	var zero = document.getElementById(id).value;
+	qtd = parseInt(zero) - parseInt(1);
+	document.getElementById(id).value = qtd;
+	document.getElementById("r" + id).value = qtd * parseFloat(valor);
 
 	// Para somar o valor total de cada produto de cada produto
 	var total = 0;
-	var nome = document.getElementsByName(ident);
-	for (var i = 0; i < nome.length; i++){
-		total += parseFloat(nome[i].value);
+	var nom = document.getElementsByName(nome);
+	for (var i = 0; i < nom.length; i++){
+		total += parseFloat(nom[i].value);
 	}
-	document.getElementById("total" + ident).value = total;	
+	document.getElementById("total" + nome).value = total;	
 
 	// Subtrair no totalzão
 	var totalFinal = 0;

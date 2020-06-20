@@ -32,7 +32,7 @@
 				<fieldset class="fsEsq">
 					<legend>Pasteis</legend>
 					<div><label class="editPastel">Carne</label>
-						<input class="botoes" type="button" id="mais" onclick="soma( 'pastel', 'pCarne', 5)" value="+1" />
+						<input class="botoes" type="button" id="mais" onclick="soma('pastel', 'pCarne', 5)" value="+1" />
 						<input class="botoes" type="button" id="menos" onclick="subtrai('pastel', 'pCarne', 5)" value="-1" />
 						<input class="impMedio" type="text" id="pCarne" value="0"  />
 					</div>
@@ -104,10 +104,35 @@
 						<input class="botoes" type="button" value="-1" onclick="subtrai('bebida', 'guarav', 2.5)" />
 						<input class="impMedio" type="text" id="guarav" value="0" />
 					</div>
-					<div><label class="editBebida">Refrigerante</label>
-						<input class="botoes" type="button" value="+1" onclick="soma('bebida', 'refri', 5)" />
-						<input class="botoes" type="button" value="-1" onclick="subtrai('bebida', 'refri', 5)" />
-						<input class="impMedio" type="text" id="refri" value="0" />
+					<div><label class="editBebida">Coca</label>
+						<input class="botoes" type="button" value="+1" onclick="soma('bebida', 'coca', 5)" />
+						<input class="botoes" type="button" value="-1" onclick="subtrai('bebida', 'coca', 5)" />
+						<input class="impMedio" type="text" id="coca" value="0" />
+					</div>
+					<div><label class="editBebida">Coca Zero</label>
+						<input class="botoes" type="button" value="+1" onclick="soma('bebida', 'cocaZero', 5)" />
+						<input class="botoes" type="button" value="-1" onclick="subtrai('bebida', 'cocaZero', 5)" />
+						<input class="impMedio" type="text" id="cocaZero" value="0" />
+					</div>
+					<div><label class="editBebida">Guaraná</label>
+						<input class="botoes" type="button" value="+1" onclick="soma('bebida', 'guarana', 5)" />
+						<input class="botoes" type="button" value="-1" onclick="subtrai('bebida', 'guarana', 5)" />
+						<input class="impMedio" type="text" id="guarana" value="0" />
+					</div>
+					<div><label class="editBebida">Guaraná Zero</label>
+						<input class="botoes" type="button" value="+1" onclick="soma('bebida', 'guaranaZero', 5)" />
+						<input class="botoes" type="button" value="-1" onclick="subtrai('bebida', 'guaranaZero', 5)" />
+						<input class="impMedio" type="text" id="guaranaZero" value="0" />
+					</div>
+					<div><label class="editBebida">Fanta Uva</label>
+						<input class="botoes" type="button" value="+1" onclick="soma('bebida', 'fantaUva', 5)" />
+						<input class="botoes" type="button" value="-1" onclick="subtrai('bebida', 'fantaUva', 5)" />
+						<input class="impMedio" type="text" id="fantaUva" value="0" />
+					</div>
+					<div><label class="editBebida">Fanta Laranja</label>
+						<input class="botoes" type="button" value="+1" onclick="soma('bebida', 'fantaLaranja', 5)" />
+						<input class="botoes" type="button" value="-1" onclick="subtrai('bebida', 'fantaLaranja', 5)" />
+						<input class="impMedio" type="text" id="fantaLaranja" value="0" />
 					</div>
 					<div><label class="editBebida">Matte</label>
 						<input class="botoes" type="button" value="+1" onclick="soma('bebida', 'matte', 4)" />
@@ -125,10 +150,7 @@
 						<input class="impMedio" type="text" id="aguaC" value="0" />
 					</div>
 				</fieldset>
-
 			</fieldset>
-			<div class="elemDir"><input class="botoes" type="reset" name="limpar" value="Limpar" />
-			<input class="botoes" type="button" name="enviar" value="Enviar" /></div>
 		</form>
 
 
@@ -190,8 +212,23 @@
 					<div><label class="editBebida">Guaravita</label>
 						<input class="impMedio" type="text" name="bebida" id="rguarav" value="0" />
 					</div>
-					<div><label class="editBebida">Refrigerante</label>
-						<input class="impMedio" type="text" name="bebida" id="rrefri" value="0" />
+					<div><label class="editBebida">Coca</label>
+						<input class="impMedio" type="text" name="bebida" id="rcoca" value="0" />
+					</div>
+					<div><label class="editBebida">Coca Zero</label>
+						<input class="impMedio" type="text" name="bebida" id="rcocaZero" value="0" />
+					</div>
+					<div><label class="editBebida">Guaraná</label>
+						<input class="impMedio" type="text" name="bebida" id="rguarana" value="0" />
+					</div>
+					<div><label class="editBebida">Guaraná Zero</label>
+						<input class="impMedio" type="text" name="bebida" id="rguaranaZero" value="0" />
+					</div>
+					<div><label class="editBebida">Fanta Uva</label>
+						<input class="impMedio" type="text" name="bebida" id="rfantaUva" value="0" />
+					</div>
+					<div><label class="editBebida">Fanta Laranja</label>
+						<input class="impMedio" type="text" name="bebida" id="rfantaLaranja" value="0" />
 					</div>
 					<div><label class="editBebida">Matte</label>
 						<input class="impMedio" type="text" name="bebida" id="rmatte" value="0" />
