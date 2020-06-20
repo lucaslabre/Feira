@@ -1,8 +1,5 @@
 /* 
-	AD 1 - Construção da Página WEB
-	Nome: Lucas Labre de Melo
-	Matrícula: 19213050431
-	Polo: Itaguaí
+	Projeto feira (folha de estilo)
 */
 body {
 	background-color: #20bcfc; 
@@ -77,71 +74,6 @@ a:visited{
 	font-size: 3em; 
 	color: #fffdd9;
 }
-	
-/*Estilo da questão 3*/
-
-.listaMoletons {
-	color: #880000; 
-	background-color: #EEDD99;
-	padding: 10px 10px 10px 50px; 
-	margin: 30px 10px 10px 10px;
-	border: 2px solid; 
-	border-color: #000055;
-	line-height: 200%; 
-	list-style-type: upper-roman;
-}
-	ul {
-		color: #880000;
-		line-height: 200%;
-		list-style-type: none;
-	}
-	img {
-		vertical-align: middle;
-	}
-	#preco {
-		color: #EE0000;
-	}
-
-/*Estilo questão 4*/
-
-.tabCamisa {
-	border-collapse: collapse;
-	background-color: #EEDD99;
-	color: #000066;
-	width: 96%;
-	text-align: center;
-	margin: 0 auto;
-	font-family: Stoke, arial, ubuntu;
-}
-	td, th {
-		border: 3px solid;
-		border-color: #000055;
-		padding: 6px 12px 6px 12px;
-	}
-	#titulo {
-		color: #FFFF22;
-		background-color: #447799;
-		font-size: 24px;
-		font-weight: bold;
-	}
-	#linTH {
-		color: #FFFFFF;
-		background-color: #777777;
-		vertical-align: middle;
-		text-align: center;
-	}
-	#colTH {
-		color: #FFFFFF;
-		background-color: #999999;
-		text-align: left;
-	}
-	#preco {
-		color: #EE0000;
-		font-weight: bold;
-		vertical-align: middle;
-	}
-
-/*Estilo questão 5*/
 
 form {
 	width: 1140px;
