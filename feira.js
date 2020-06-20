@@ -11,6 +11,14 @@ function soma(ident, ref, valor){
 		total += parseFloat(nome[i].value);
 	}
 	document.getElementById("total" + ident).value = total;	
+
+	// Somar no totalzão
+	var totalFinal = 0;
+	var parciais = document.getElementsByName("totalParcial");
+	for (var j = 0; j < parciais.length; j++){
+		totalFinal += parseFloat(parciais[j].value);
+	}
+	document.getElementById("total").value = totalFinal;
 }
 
 function subtrai(ident, ref, valor){
@@ -26,26 +34,12 @@ function subtrai(ident, ref, valor){
 		total += parseFloat(nome[i].value);
 	}
 	document.getElementById("total" + ident).value = total;	
+
+	// Subtrair no totalzão
+	var totalFinal = 0;
+	var parciais = document.getElementsByName("totalParcial");
+	for (var j = 0; j < parciais.length; j++){
+		totalFinal += parseFloat(parciais[j].value);
+	}
+	document.getElementById("total").value = totalFinal;
 }
-
-
-
-/*
-function rSoma(refOrigem, refDestino, valor){
-	var qtd = document.getElementById(refOrigem).value;
-	valor = parseInt(valor);
-	total = qtd * valor;
-	document.getElementById(refDestino).value = total;
-}
-*/
-
-/*
-function valores(){
-	var dict = new Map();
-	dict.set("pCarne","2.5");
-	dict.set("pQueijo", "2.0");
-	dict.set("pFrango", "1.0");
-
-	alert(dict);
-}
-*/
