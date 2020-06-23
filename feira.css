@@ -85,34 +85,15 @@ form {
 	border-color: #000055;
 	float: center;
 }
-	.listaCompras {
-		height: 230px;
-		width: 230px;
-		float: right;
-		margin-top: 8px;
-		margin-left: 10px;
-	}
-	.colLabSelProd {
-		width: 260px;
-		height: 40px;
-		float: left;
-	}
-	.colSelProd {
-		width: 160px;
-		float: right;
-	}
-	.linhaProdSel {
-		width: 240px;
-		margin-bottom: 6px;
-		float: left;
-	}
 	.elemEsq {
 		float:left;
 		display: block;
 	}
 	.elemDir {
-		float: none;
-		display: block;
+		float: right;
+		display: inline-block;
+		margin-top: 15px;
+		margin-right: 10px;
 	}
 	.impMedio {
 		width: 50px;

@@ -1,11 +1,15 @@
-# Projeto para feira
+# Controle de Vendas
 
-## Ideia
+## Descrição
 
-Neste projeto foram colocados os produtos vendidos na pastelaria com
-os preços implícitos no código fonte.
+Nesse projeto o comerciante pode controlar suas vendas sabendo quantos
+produtos foram vendidos no dia, o valor final arrecadado por cada produto
+e o valor total de todas as vendas.
 
-## Objetivo
+## Getting Started
 
-Computar a quantidade de produtos vendidos por dia de feira e os 
-lucros obtidos.
+Para utilizar o programa, basta inserir a data da venda e clicar
+nos botões +1 ou -1 conforme realiza uma venda ou retira um pedido.
+
+> Contato: 
+[LinkedIn](https://www.linkedin.com/in/lucas-labre-de-melo/)
