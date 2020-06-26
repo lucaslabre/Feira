@@ -11,5 +11,10 @@ e o valor total de todas as vendas.
 Para utilizar o programa, basta inserir a data da venda e clicar
 nos botões +1 ou -1 conforme realiza uma venda ou retira um pedido.
 
-> Contato: 
-[LinkedIn](https://www.linkedin.com/in/lucas-labre-de-melo/)
+### Contato:
+
+Desenvolvedor: Lucas Labre \
+Telefone: (21) 98406-8589 \
+Email: lucaslabre@gmail.com \
+[LinkedIn](https://www.linkedin.com/in/lucas-labre-de-melo/) \
+[GitHub](https://github.com/lucaslabre)

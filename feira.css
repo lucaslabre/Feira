@@ -2,8 +2,9 @@
 	Projeto feira (folha de estilo)
 */
 body {
-	background-color: #20bcfc; 
-	color: #FFFF00; 
+	// background-color: #FA7F72;
+	background-image: radial-gradient(#a80000, #760300); 
+	color: white; 
 	font-size: 16px;	
 	font-family: Stoke, verdana, liberation;
 }
@@ -32,7 +33,7 @@ nav {
 		padding-bottom: 5px;
 		padding-left: 4px; 
 		padding-right: 4px;
-		background-color: #FFFF00;
+		background-color: white;
 		width: 100px; 
 		display: inline-block;
 	}
@@ -46,11 +47,14 @@ nav a:visited {
 }
 a:link {
 	text-decoration: none; 
-	color: #FFFF00;
+	color: white;
 }
 a:visited{
 	text-decoration: none; 
-	color: #EEEE00;
+	color: white;
+}
+a:hover{
+	text-decoration: underline;
 }
 .ender {
 	text-align: right; 
@@ -59,14 +63,14 @@ a:visited{
 	float: right;
 }
 .imgLogo {
-	max-width:150px;
-    max-height:100px;
+	max-width:180px;
+    max-height:130px;
     width: auto;
     height: auto;
 }
-.apres {
+.titulo {
 	display: inline;
-	margin-left: 400px; 
+	margin-left: 360px; 
 	text-align: center; 
 	font-size: 18px;
 	-webkit-text-stroke-width: 1px;
@@ -76,14 +80,14 @@ a:visited{
 }
 
 form {
+	float: center;
 	width: 1140px;
 	color: #880000;
 	background-color: #EEDD99;
 	padding: 6px 6px 15px 6px;
 	margin: 10px auto;
-	border: 2px solid;
-	border-color: #000055;
-	float: center;
+	border: 2px solid black;
+	border-radius: 10px;
 }
 	.elemEsq {
 		float:left;
@@ -116,21 +120,12 @@ label.editPastel{
 		width: 170px;
 	}
 
-/*ESTILO QUESTÃO 6*/
-
 /*Posicionamento de Fieldsets*/
 .fsPrincipal{
 	width: auto;
 }
 .fsEsq{
 	float: left;
-	display: inline-block;
-	margin: 0px;
-	margin-left: 2px;
-	margin-right: 2px;
-}
-.fsCentro{
-	float: none;
 	display: inline-block;
 	margin: 0px;
 	margin-left: 2px;
@@ -165,27 +160,6 @@ label.editPastel{
 	width: 50px;
 }
 
-/*Posicionamento e tamanho de elementos do formulário*/
-.divLinha {
-	width: 550px;
-	margin-bottom: 6px;
-}
-.colPri {
-	float: left;
-	display: block;
-	width: 90px;
-}
-.colPriCompras {
-	float: left;
-	display: block;
-	width: 86px;
-}
-.colPriPag {
-	float: left;
-	display: block;
-	width: 250px;
-}
-
 /* JavaScript*/
 
 .itens {
@@ -194,4 +168,3 @@ label.editPastel{
 	padding: 12px;
 	background-color: #FFFFFF;
 }
-
