@@ -3,28 +3,32 @@
 <head>
 	<title>Pedidos</title>
 	<meta charset="utf-8" />
-	<base target="_blank" />
+	<base target="_self" />
 	<link rel="stylesheet" type="text/css" href="feira.css" />
 	<link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet' />
+	<link rel="icon" href="imagens/logo_japastel.jpeg" type="image/jpeg" />
 	<script language="javascript" src="feira.js"></script>
 </head>
 <body>
 	<header>
-		<img class="imgLogo" src="logo_japastel.jpeg" />
-		<h1 class="titulo">JAPASTEL</h1>
-		<address class="ender">
-			Desenvolvedor: Lucas Labre<br/>
-			Tel: (21) 98406-8589<br/>
-			<a href="mailto:lucaslabre@email.com">lucaslabre@gmail.com</a><br/>
-			<a class="" href="https://www.linkedin.com/in/lucas-labre-de-melo/">LinkedIn</a><br/>
-			<a href="https://github.com/lucaslabre">GitHub</a><br/>
-		</address>
+		<div class="block1">
+			<div>
+				<img class="imgLogo" src="imagens/logo_japastel.jpeg" />
+			</div>
+			<div>
+				<img class="japastel" src="imagens/japastel.png" />
+			</div>
+			<div>
+				<img class="imgLogo" src="imagens/logo_japastel.jpeg" />
+			</div>
+		</div>
 	</header>
 	<nav class="menu">
-		<a class="botao" href="Malhama.html">INICIO</a>
-		<a class="botao" href="Moletons.html">ESTOQUE</a>
-		<a class="botao" href="Camisetas.html">DEMANDA</a>
-		<a class="botao" href="Compras.html">COMPRAS</a>
+		<a class="botao" href="">INICIO</a>
+		<a class="botao" href="">ESTOQUE</a>
+		<a class="botao" href="">DEMANDA</a>
+		<a class="botao" href="">COMPRAS</a>
+		<a class="botao" href="#contato">CONTATO</a>
 	</nav>
 	<section>
 		<form method="post" action="dados.html" name="vendas">
@@ -273,8 +277,18 @@
 				<input class="botoes" type="reset" name="limpar" value="Limpar" />
 				<input class="botoes" type="button" name="enviar" value="Enviar" />
 			</div>
-		</form>
-
+		</form>		
 	</section>
+
+	<footer>
+		<div class="links" id="links-footer">
+			<h2 class="contato" id="contato">Entre em contato com o desenvolvedor</h2>
+			<a href="">WhatsApp: (21) 98406-8589</a>
+			<a href="https://www.linkedin.com/in/lucas-labre-de-melo/">LinkedIn</a>
+			<a href="https://github.com/lucaslabre">GitHub</a>
+			<a href="mailto:lucaslabre@gmail.com">lucaslabre@gmail.com</a>
+		</div>
+	</footer>
+
 </body>
 </html>

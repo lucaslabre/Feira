@@ -2,7 +2,7 @@ function conta(dep, alvo){
 	var soma = 0;
 	var destino = document.getElementById(alvo).value;
 	soma += parseInt(destino) + parseInt(dep.value);
-	document.getElementById(alvo).value = soma;
+	document.getElementById(alvo).value = Math.max(soma,0);
 }
 
 function soma(dependencia, preco){
