@@ -24,7 +24,7 @@
 		</div>
 	</header>
 	<nav class="menu">
-		<a class="botao" href="">INICIO</a>
+		<a class="botao" href="">INÍCIO</a>
 		<a class="botao" href="">ESTOQUE</a>
 		<a class="botao" href="">DEMANDA</a>
 		<a class="botao" href="">COMPRAS</a>
@@ -52,48 +52,20 @@
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'pFrango'); soma('pFrango', 5);totalParcial('pastel')" />
 						<input class="impMedio" type="text" id="pFrango" value="0"/>
 					</div>
-					<div><label class="editPastel">pizza</label>
+					<div><label class="editPastel">Pizza</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'pPizza'); soma('pPizza', 5);totalParcial('pastel')"/>
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'pPizza'); soma('pPizza', 5);totalParcial('pastel')" />
 						<input class="impMedio" type="text" id="pPizza" value="0" />
 					</div>
-					<div><label class="editPastel">carne seca c/ catupiry</label>
+					<div><label class="editPastel">Carne seca c/ catupiry</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'pCarneSeca'); soma('pCarneSeca', 5);totalParcial('pastel')"/>
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'pCarneSeca'); soma('pCarneSeca', 5);totalParcial('pastel')" />
 						<input class="impMedio" type="text" id="pCarneSeca" value="0" />
 					</div>
 				</fieldset>
-				
-				<fieldset class="fsEsq">
-					<legend>Bolinhos de aipim:</legend>
-					<div><label class="editBolinho">Carne moída</label>
-						<input class="botoes" type="button" value="+1" onclick="conta(this, 'bCarneMoida'); soma('bCarneMoida', 5);totalParcial('bolinho')" />
-						<input class="botoes" type="button" value="-1" onclick="conta(this, 'bCarneMoida'); soma('bCarneMoida', 5);totalParcial('bolinho')" />
-						<input class="impMedio" type="text" id="bCarneMoida" value="0" />
-					</div>
-					<div><label class="editBolinho">Carne seca</label>
-						<input class="botoes" type="button" value="+1" onclick="conta(this, 'bCarneSeca'); soma('bCarneSeca', 5);totalParcial('bolinho')" />
-						<input class="botoes" type="button" value="-1" onclick="conta(this, 'bCarneSeca'); soma('bCarneSeca', 5);totalParcial('bolinho')" />
-						<input class="impMedio" type="text" id="bCarneSeca" value="0" />
-					</div>
-					<div><label class="editBolinho">Queijo</label>
-						<input class="botoes" type="button" value="+1" onclick="conta(this, 'bQueijo'); soma('bQueijo', 5);totalParcial('bolinho')" />
-						<input class="botoes" type="button" value="-1" onclick="conta(this, 'bQueijo'); soma('bQueijo', 5);totalParcial('bolinho')" />
-						<input class="impMedio" type="text" id="bQueijo" value="0" />
-					</div>
-					<div><label class="editBolinho">Kibe</label>
-						<input class="botoes" type="button" value="+1" onclick="conta(this, 'kibe'); soma('kibe', 5);totalParcial('bolinho')" />
-						<input class="botoes" type="button" value="-1" onclick="conta(this, 'kibe'); soma('kibe', 5);totalParcial('bolinho')" />
-						<input class="impMedio" type="text" id="kibe" value="0" />
-					</div>
-					<div><label class="editBolinho">Massa</label>
-						<input class="botoes" type="button" value="+1" onclick="conta(this, 'massa'); soma('massa', 10);totalParcial('bolinho')" />
-						<input class="botoes" type="button" value="-1" onclick="conta(this, 'massa'); soma('massa', 10);totalParcial('bolinho')" />
-						<input class="impMedio" type="text" id="massa" value="0" />
-					</div>
-				</fieldset>
 
-				<fieldset class="fsEsq">
+
+				<fieldset class="fsDir">
 					<legend>Bebidas:</legend>
 					<div><label class="editBebida">Caldo de cana 1/2L</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'caldoMeio'); soma('caldoMeio', 6);totalParcial('bebida')" />
@@ -156,12 +128,58 @@
 						<input class="impMedio" type="text" id="aguaC" value="0" />
 					</div>
 				</fieldset>
+
+
+				<fieldset class="fsEsq">
+					<legend>Bolinhos de aipim:</legend>
+					<div><label class="editBolinho">Carne moída</label>
+						<input class="botoes" type="button" value="+1" onclick="conta(this, 'bCarneMoida'); soma('bCarneMoida', 5);totalParcial('bolinho')" />
+						<input class="botoes" type="button" value="-1" onclick="conta(this, 'bCarneMoida'); soma('bCarneMoida', 5);totalParcial('bolinho')" />
+						<input class="impMedio" type="text" id="bCarneMoida" value="0" />
+					</div>
+					<div><label class="editBolinho">Carne seca</label>
+						<input class="botoes" type="button" value="+1" onclick="conta(this, 'bCarneSeca'); soma('bCarneSeca', 5);totalParcial('bolinho')" />
+						<input class="botoes" type="button" value="-1" onclick="conta(this, 'bCarneSeca'); soma('bCarneSeca', 5);totalParcial('bolinho')" />
+						<input class="impMedio" type="text" id="bCarneSeca" value="0" />
+					</div>
+					<div><label class="editBolinho">Queijo</label>
+						<input class="botoes" type="button" value="+1" onclick="conta(this, 'bQueijo'); soma('bQueijo', 5);totalParcial('bolinho')" />
+						<input class="botoes" type="button" value="-1" onclick="conta(this, 'bQueijo'); soma('bQueijo', 5);totalParcial('bolinho')" />
+						<input class="impMedio" type="text" id="bQueijo" value="0" />
+					</div>
+					<div><label class="editBolinho">Kibe</label>
+						<input class="botoes" type="button" value="+1" onclick="conta(this, 'kibe'); soma('kibe', 5);totalParcial('bolinho')" />
+						<input class="botoes" type="button" value="-1" onclick="conta(this, 'kibe'); soma('kibe', 5);totalParcial('bolinho')" />
+						<input class="impMedio" type="text" id="kibe" value="0" />
+					</div>
+					<div><label class="editBolinho">Massa</label>
+						<input class="botoes" type="button" value="+1" onclick="conta(this, 'massa'); soma('massa', 10);totalParcial('bolinho')" />
+						<input class="botoes" type="button" value="-1" onclick="conta(this, 'massa'); soma('massa', 10);totalParcial('bolinho')" />
+						<input class="impMedio" type="text" id="massa" value="0" />
+					</div>
+				</fieldset>
 			</fieldset>
 
 			<div class="elemEsq">
-				<input class="botoes" type="reset" value="Limpar" />
+				<input class="botoes" type="button" value="limpar" onclick="confirmClear()" />
 				<input class="botoes" type="button" name="enviar" value="Enviar" />
 			</div>
+
+			<div class="elemDir">
+				<label for="feriado">Feriado</label> <input type="checkbox" name="feriado" id="feriado"> 
+			</div>
+
+			<div class="elemDir">
+				<label>Clima: </label>
+				<select required>
+					<option>---</option>
+					<option>Quente</option>
+					<option>Frio</option>
+					<option>Chuvoso</option>
+					<option>Nublado</option>
+				</select>
+			</div>
+
 			<div class="elemDir">
 				<label>Data: </label>
 				<input type="date" name="data">
@@ -171,7 +189,7 @@
 
 
 		<form method="post" action="dados.html" name="vendas">
-			<fieldset class="fsPrincipal">
+			<fieldset>
 				<legend>Resultados</legend>
 				<fieldset class="fsEsq">
 					<legend>Pasteis</legend>
@@ -184,16 +202,17 @@
 					<div><label class="editPastel">Frango c/ catupiri</label>
 						<input class="impMedio" type="text" name="pastel" id="rpFrango" value="0" readonly />
 					</div>
-					<div><label class="editPastel">pizza</label>
+					<div><label class="editPastel">Pizza</label>
 						<input class="impMedio" type="text" name="pastel" id="rpPizza" value="0" readonly />
 					</div>
-					<div><label class="editPastel">carne seca c/ catupiry</label>
+					<div><label class="editPastel">Carne seca c/ catupiry</label>
 						<input class="impMedio" type="text" name="pastel" id="rpCarneSeca" value="0" readonly />
 					</div>
 					<div><label class="editPastel">TOTAL:</label>
 						<input type="text" name="totalParcial" id="totalpastel" class="impMedio" value="0" readonly>
 					</div>
 				</fieldset>
+				
 				
 				<fieldset class="fsEsq">
 					<legend>Bolinhos de aipim:</legend>
@@ -216,6 +235,7 @@
 						<input type="text" name="totalParcial" id="totalbolinho" class="impMedio" value="0" readonly>
 					</div>
 				</fieldset>
+				
 
 				<fieldset class="fsEsq">
 					<legend>Bebidas:</legend>
@@ -231,26 +251,6 @@
 					<div><label class="editBebida">Refrigerantes</label>
 						<input class="impMedio" type="text" name="bebida" id="rrefri" value="0" readonly />
 					</div>
-				<!--
-					<div><label class="editBebida">Coca</label>
-						<input class="impMedio" type="text" name="bebida" id="rcoca" value="0" />
-					</div>
-					<div><label class="editBebida">Coca Zero</label>
-						<input class="impMedio" type="text" name="bebida" id="rcocaZero" value="0" />
-					</div>
-					<div><label class="editBebida">Guaraná</label>
-						<input class="impMedio" type="text" name="bebida" id="rguarana" value="0" />
-					</div>
-					<div><label class="editBebida">Guaraná Zero</label>
-						<input class="impMedio" type="text" name="bebida" id="rguaranaZero" value="0" />
-					</div>
-					<div><label class="editBebida">Fanta Uva</label>
-						<input class="impMedio" type="text" name="bebida" id="rfantaUva" value="0" />
-					</div>
-					<div><label class="editBebida">Fanta Laranja</label>
-						<input class="impMedio" type="text" name="bebida" id="rfantaLaranja" value="0" />
-					</div>
-				-->
 					<div><label class="editBebida">Matte</label>
 						<input class="impMedio" type="text" name="bebida" id="rmatte" value="0" readonly />
 					</div>
@@ -265,28 +265,26 @@
 					</div>
 				</fieldset>
 
-				<fieldset class="fsDir">
+
+				<fieldset class="fsEsq">
 					<legend>TOTAL</legend>
 					<div><label>R$ </label>
-						<input type="text" name="TOTALZAO" id="total" value="0" readonly>
+						<input type="text" class="impTotalzao" name="TOTALZAO" id="total" value="0" readonly>
 					</div>
 				</fieldset>
 
 			</fieldset>
-			<div>
-				<input class="botoes" type="reset" name="limpar" value="Limpar" />
-				<input class="botoes" type="button" name="enviar" value="Enviar" />
-			</div>
 		</form>		
 	</section>
 
 	<footer>
 		<div class="links" id="links-footer">
-			<h2 class="contato" id="contato">Entre em contato com o desenvolvedor</h2>
-			<a href="">WhatsApp: (21) 98406-8589</a>
-			<a href="https://www.linkedin.com/in/lucas-labre-de-melo/">LinkedIn</a>
-			<a href="https://github.com/lucaslabre">GitHub</a>
-			<a href="mailto:lucaslabre@gmail.com">lucaslabre@gmail.com</a>
+			<h2 class="contato" id="contato">Entre em contato com o desenvolvedor</h2> 
+			<h2 class="dev">Lucas Labre</h2>
+			<a target="_blank" href="https://wa.me/5521984068589">WhatsApp</a>
+			<a target="_blank" href="https://www.linkedin.com/in/lucas-labre-de-melo/" >LinkedIn</a>
+			<a target="_blank" href="https://github.com/lucaslabre">GitHub</a>
+			<a target="_blank" href="mailto:lucaslabre@gmail.com">lucaslabre@gmail.com</a>
 		</div>
 	</footer>
 

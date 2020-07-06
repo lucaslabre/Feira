@@ -17,6 +17,7 @@ header {
 	.block1 {
 		display: flex;
 		justify-content: space-between;
+		//align-items: center;
 	}
 
 	.imgLogo {
@@ -63,10 +64,7 @@ nav {
 		background-color: black;
 		width: 120px; 
 		display: inline-block;
-	}
-
-
-nav 
+	} 
 	a:link {
 		text-decoration: none; 
 		color: white;
@@ -79,74 +77,79 @@ nav
 section {
 	display: block;
 }
+	form {
+		float: center;
+		width: 870px;
+		max-width: 100%;
+		color: #880000;
+		background-color: rgba(238,221,153,1);
+		padding: 6px 6px 15px 6px;
+		margin: 10px auto;
+		border: 2px solid black;
+		border-radius: 10px;
+	}
+		/*Posicionamento de Fieldsets*/
 
-form {
-	float: center;
-	width: 1140px;
-	color: #880000;
-	background-color: rgba(238,221,153,1);
-	padding: 6px 6px 15px 6px;
-	margin: 10px auto;
-	border: 2px solid black;
-	border-radius: 10px;
-}
-	/*Posicionamento de Fieldsets*/
-	.fsPrincipal{
-		width: auto;
-	}
-	.fsEsq{
-		float: left;
-		display: inline-block;
-		margin: 0px;
-		margin-left: 2px;
-		margin-right: 2px;
-	}
-	.fsDir{
-		float: right;
-		display: inline-block;
-		margin: 0px;
-		margin-left: 2px;
-		margin-right: 2px;
-	}
-	.elemEsq {
-		float:left;
-		display: block;
-	}
-	.elemDir {
-		float: right;
-		display: inline-block;
-		margin-top: 15px;
-		margin-right: 10px;
-	}
-	.impMedio {
-		width: 50px;
-	}
-	.botoes {
-		float: none;
-		margin: 20px 10px 0px 10px;
-	}
+		.fsEsq{
+			float: left;
+			display: block;
+			margin: 0px;
+			margin-left: 2px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.fsDir{
+			float: right;
+			display: block;
+			margin: 0px;
+			margin-left: 2px;
+			margin-right: 2px;
+		}
+		.elemEsq {
+			float:left;
+			display: block;
+		}
+		.elemDir {
+			float: right;
+			display: inline-block;
+			margin-top: 15px;
+			margin-right: 10px;
+		}
+		.impMedio {
+			width: 50px;
+		}
+		.botoes {
+			float: none;
+			margin: 20px 10px 0px 10px;
+		}
 
-label.editPastel{
-	display: inline-block;
-	width: 200px;
-}
-	.editBolinho{
-		display: inline-block;
-		width: 120px;
-	}
-	.editBebida{
-		display: inline-block;
-		width: 170px;
-	}
+	label.editPastel{
+			display: inline-block;
+			width: 180px;
+		}
+		.editBolinho{
+			display: inline-block;
+			width: 180px;
+		}
+		.editBebida{
+			display: inline-block;
+			width: 170px;
+		}
 
 footer{
 	background: black;
 }
 	.contato {
 		padding-top: 10px;
-		padding-bottom: 20px;
+		
 		letter-spacing: 1px;
 	}
+
+	.dev{
+		padding-bottom: 15px;
+		letter-spacing: 1px;
+	}
+
 	.links {
 		font-family: 'Source Sans Pro', sans-serif;
 	  	text-align: center;
@@ -161,6 +164,8 @@ footer{
 	  	margin: 0 16px;
 	  	transition: 700ms;
 	  	letter-spacing: 1px;
+	  	padding: 2px;
+	  	border-radius: 30px;
 	}
 
 	.links a:hover {
@@ -174,7 +179,7 @@ footer{
 	#links-footer a{transition: 700ms;}
 
 	#links-footer a:hover{
-	  padding: 32px;
+	  padding: 10px;
 	  background-color: white;
 	  color: black;
 	  border-radius: 30px;
@@ -183,5 +188,13 @@ footer{
 
 
 @media (max-width: 600px) {
-
+	form {
+		float: center;
+		color: #880000;
+		background-color: rgba(238,221,153,1);
+		padding: 6px 6px 15px 6px;
+		margin: 10px auto;
+		border: 2px solid black;
+		border-radius: 10px;
+	}
 }

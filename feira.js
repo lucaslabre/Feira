@@ -39,3 +39,15 @@ function totalzao(){
 	}
 	document.getElementById("total").value = soma;
 }
+
+function confirmClear(){
+	resp = confirm('Tem certeza que deseja limpar os campos?');
+	var elems = document.getElementsByClassName('impMedio');
+	if (resp){
+		document.getElementsByClassName('impTotalzao')[0].value = '0';
+		for(var i = 0; i < elems.length; i++) {
+		    elems[i].value = '0';
+		}
+	}
+
+}
