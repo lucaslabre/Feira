@@ -3,11 +3,10 @@
 */
 body {
 	margin: 0;
-	// background-color: #FA7F72;
 	background-image: radial-gradient(#a80000, #760300); 
 	color: white; 
 	font-size: 16px;	
-	//font-family: Stoke, verdana, liberation;
+	/*font-family: Stoke, verdana, liberation;*/
 	font-family: fantasy;
 }
 
@@ -77,10 +76,9 @@ nav {
 section {
 	display: block;
 }
+
 	form {
-		float: center;
-		width: 870px;
-		max-width: 100%;
+		width: 855px;
 		color: #880000;
 		background-color: rgba(238,221,153,1);
 		padding: 6px 6px 15px 6px;
@@ -88,32 +86,30 @@ section {
 		border: 2px solid black;
 		border-radius: 10px;
 	}
+
 		/*Posicionamento de Fieldsets*/
 
-		.fsEsq{
-			float: left;
-			display: block;
-			margin: 0px;
-			margin-left: 2px;
-			margin-right: 10px;
-			margin-bottom: 10px;
+		.fsPrincipal {
+			border: 1px solid black;
 		}
-		.fsDir{
+
+		.fsEsq {
+			float: left;
+			margin: 5px;
+			border: 1px solid black;
+		}
+		.fsDir {
 			float: right;
-			display: block;
-			margin: 0px;
-			margin-left: 2px;
-			margin-right: 2px;
+			margin: 5px;
+			border: 1px solid black;
 		}
 		.elemEsq {
 			float:left;
-			display: block;
 		}
 		.elemDir {
 			float: right;
-			display: inline-block;
-			margin-top: 15px;
-			margin-right: 10px;
+			padding-top: 15px;
+			padding-right: 5px;
 		}
 		.impMedio {
 			width: 50px;
@@ -187,7 +183,7 @@ footer{
 	}
 
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 	form {
 		float: center;
 		color: #880000;
