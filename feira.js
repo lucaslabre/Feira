@@ -74,5 +74,27 @@ function temaEscuro(){
 	document.getElementById("vendas").style.background = '#7a7a71';
 	document.getElementById("vendas2").style.background = '#7a7a71';
 	document.getElementById("vendas").style.color = "#AA0000";
-	document.getElementById("vendas2").style.color = "#FFFFFF";
+	document.getElementById("vendas2").style.color = "#AA0000";
 }
+
+function esconder(){
+	esconde = document.getElementById("check").checked;
+	if (esconde){
+		document.getElementById("main").style.visibility = "visible";
+		document.getElementById("master").style.border = "1px solid black";
+	}
+	else {
+		document.getElementById("main").style.visibility = 'hidden';
+		document.getElementById("master").style.border = "none";
+	}
+}
+
+/*
+function esconder(){
+	check = document.getElementById("check");
+	if (check == checked){
+		document.getElementById("main").style.display = "none";
+		//document.getElementById("main").style.
+	}
+}
+*/

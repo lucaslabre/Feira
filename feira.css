@@ -20,7 +20,14 @@ main {
 	text-align: center;
 	margin-left: 10px;
 }
-	
+
+.main {
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 5px 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}	
 
 header
 	.container {
@@ -72,6 +79,7 @@ nav {
 		background-color: black;
 		width: 120px; 
 		display: inline-block;
+		cursor: pointer; 
 	} 
 	a:link {
 		text-decoration: none; 
@@ -124,6 +132,8 @@ section
 		.botoes {
 			float: none;
 			margin: 20px 10px 0px 10px;
+			border-radius: 100px;
+			outline: none;
 		}
 
 	label.editPastel{

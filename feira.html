@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+
 <head>
 	<title>Japastel</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<base target="_self" />
 	<link rel="stylesheet" type="text/css" href="feira.css" />
+	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet' />
 	<link rel="icon" href="imagens/logo_japastel.jpeg" type="image/jpeg" />
 	<script language="javascript" src="feira.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
 	<header>
@@ -34,15 +37,18 @@
 	</nav>
 
 	<main>
-		<div>
-			<p>Cor do fundo: <input type="color" id="back" onchange="escolheCor()" value="#a80000"></p>
-			<p>Cor do formulário: <input type="color" id="form" onchange="escolheCor()" value="#eedd99"></p>
-			<p>Cor das letras: <input type="color" id="letras" onchange="escolheCor()"></p>
-			<p>Fonte da letra: <input type="text" id="fonteForm" class="impMedio" onchange="escolheFonte()"></p>
-			<p href="" class="botao" onclick="temaEscuro()">TEMA ESCURO</p>
+		<div class="main" id="master">
+			<input type="checkbox" id="check" style="display: none;"> <label for="check"><p class="botao" onclick="esconder()">ESCONDER</p></label>
+			<div id="main">				
+				<p>Cor do fundo: <input type="color" id="back" onchange="escolheCor()" value="#a80000"></p>
+				<p>Cor do formulário: <input type="color" id="form" onchange="escolheCor()" value="#eedd99"></p>
+				<p>Cor das letras: <input type="color" id="letras" onchange="escolheCor()"></p>
+				<p>Fonte da letra: <input type="text" id="fonteForm" class="impMedio" onchange="escolheFonte()"></p>
+				<p class="botao" onclick="temaEscuro()">TEMA ESCURO</p>
+			</div>
 		</div>
 	</main>
-	
+
 	
 	<section>
 		<form method="post" action="dados.html" id="vendas">
@@ -187,6 +193,7 @@
 				<label>Clima: </label>
 				<select required>
 					<option>---</option>
+					<option>Normal</option>
 					<option>Quente</option>
 					<option>Frio</option>
 					<option>Chuvoso</option>
