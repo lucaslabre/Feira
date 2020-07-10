@@ -3,6 +3,7 @@
 <head>
 	<title>Japastel</title>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<base target="_self" />
 	<link rel="stylesheet" type="text/css" href="feira.css" />
 	<link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet' />
@@ -11,7 +12,7 @@
 </head>
 <body>
 	<header>
-		<div class="block1">
+		<div class="container">
 			<div>
 				<img class="imgLogo" src="imagens/logo_japastel.jpeg" />
 			</div>
@@ -23,6 +24,7 @@
 			</div>
 		</div>
 	</header>
+
 	<nav class="menu">
 		<a class="botao" href="">INÍCIO</a>
 		<a class="botao" href="">ESTOQUE</a>
@@ -30,8 +32,20 @@
 		<a class="botao" href="">COMPRAS</a>
 		<a class="botao" href="#contato">CONTATO</a>
 	</nav>
+
+	<main>
+		<div>
+			<p>Cor do fundo: <input type="color" id="back" onchange="escolheCor()" value="#a80000"></p>
+			<p>Cor do formulário: <input type="color" id="form" onchange="escolheCor()" value="#eedd99"></p>
+			<p>Cor das letras: <input type="color" id="letras" onchange="escolheCor()"></p>
+			<p>Fonte da letra: <input type="text" id="fonteForm" class="impMedio" onchange="escolheFonte()"></p>
+			<p href="" class="botao" onclick="temaEscuro()">TEMA ESCURO</p>
+		</div>
+	</main>
+	
+	
 	<section>
-		<form method="post" action="dados.html" name="vendas">
+		<form method="post" action="dados.html" id="vendas">
 
 			<fieldset class="fsPrincipal">
 				<legend>Pedidos</legend>
@@ -188,7 +202,7 @@
 		</form>
 
 
-		<form method="post" action="dados.html" name="vendas">
+		<form method="post" action="dados.html" id="vendas2">
 			<fieldset class="fsPrincipal">
 				<legend>Resultados</legend>
 				<fieldset class="fsEsq">

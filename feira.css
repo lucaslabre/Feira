@@ -10,23 +10,32 @@ body {
 	font-family: fantasy;
 }
 
-header {
+main {
+	float: left;
+	color: white;
+	font-family: arial;
 	display: block;
+	padding-top: 4px; 
+	padding-bottom: 4px;
+	text-align: center;
+	margin-left: 10px;
 }
-	.block1 {
+	
+
+header
+	.container {
 		display: flex;
-		justify-content: space-between;
-		//align-items: center;
+        justify-content: space-between;
 	}
 
 	.imgLogo {
 		margin-top: 20px;
-	    height: 120px;
+	    height: 100px;
 	}
 
 	.japastel {
 		margin-top: 20px;
-		height: 90px;
+		height: 70px;
 	}
 
 	.titulo { 
@@ -73,18 +82,16 @@ nav {
 		color: white;
 	}
 
-section {
-	display: block;
-}
-
+section 
 	form {
 		width: 855px;
 		color: #880000;
-		background-color: rgba(238,221,153,1);
+		background: #eedd99;
 		padding: 6px 6px 15px 6px;
 		margin: 10px auto;
 		border: 2px solid black;
 		border-radius: 10px;
+		box-shadow: 2px 2px 5px 1px black;
 	}
 
 		/*Posicionamento de Fieldsets*/

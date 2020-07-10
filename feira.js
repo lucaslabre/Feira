@@ -49,5 +49,30 @@ function confirmClear(){
 		    elems[i].value = '0';
 		}
 	}
+}
 
+function escolheCor(){
+	var corBack = document.getElementById("back").value;
+	var corForm = document.getElementById("form").value;
+	var corLetras = document.getElementById("letras").value;
+
+	document.body.style.background = corBack;
+	document.getElementById("vendas").style.background = corForm;
+	document.getElementById("vendas2").style.background = corForm;
+	document.getElementById("vendas").style.color = corLetras;
+	document.getElementById("vendas2").style.color = corLetras;
+}
+
+function escolheFonte(){
+	var fonte = document.getElementById("fonteForm").value;
+	document.getElementById("vendas").style.fontFamily = fonte;
+	document.getElementById("vendas2").style.fontFamily = fonte;
+}
+
+function temaEscuro(){
+	document.body.style.background = "#333333";
+	document.getElementById("vendas").style.background = '#7a7a71';
+	document.getElementById("vendas2").style.background = '#7a7a71';
+	document.getElementById("vendas").style.color = "#AA0000";
+	document.getElementById("vendas2").style.color = "#FFFFFF";
 }
