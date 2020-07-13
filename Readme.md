@@ -17,12 +17,13 @@ Desenvolvedor: Lucas Labre \
 Telefone: (21) 98406-8589 \
 Email: lucaslabre@gmail.com \
 [LinkedIn](https://www.linkedin.com/in/lucas-labre-de-melo/) \
-[GitHub](https://github.com/lucaslabre)
+[GitHub](https://github.com/lucaslabre) \
+[WhatsApp](https://wa.me/5521984068589)
 
 ## Ideias
 
-[x] Colocar campo de clima (quente, frio, chuvoso, nublado)
-[x] Colocar campo de datas especiais (feriado)
-[x] Função limpar
-[ ] Menu lateral
-[ ] Implementar um banco de dados
+- [x] Colocar campo de clima (normal, quente, frio, chuvoso, nublado)
+- [x] Colocar campo de datas especiais (feriado)
+- [x] Função limpar
+- [ ] Menu lateral
+- [ ] Implementar um banco de dados

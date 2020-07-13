@@ -1,13 +1,16 @@
 /* 
 	Projeto feira (folha de estilo)
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 body {
 	margin: 0;
 	background-image: radial-gradient(#a80000, #760300); 
-	color: white; 
+	color: white;
 	font-size: 16px;	
 	/*font-family: Stoke, verdana, liberation;*/
-	font-family: fantasy;
+	font-family: Poppins;
 }
 
 main {
@@ -27,7 +30,13 @@ main {
 	margin: 5px 5px;
 	padding-left: 10px;
 	padding-right: 10px;
+	animation-name: layout;
+	animation-duration: 5s;
 }	
+
+@keyframes layout{
+	100% {display: none;}
+}
 
 header
 	.container {
@@ -92,7 +101,7 @@ nav {
 
 section 
 	form {
-		width: 855px;
+		width: 54em;
 		color: #880000;
 		background: #eedd99;
 		padding: 6px 6px 15px 6px;
@@ -138,15 +147,15 @@ section
 
 	label.editPastel{
 			display: inline-block;
-			width: 180px;
+			width: 190px;
 		}
 		.editBolinho{
 			display: inline-block;
-			width: 180px;
+			width: 190px;
 		}
 		.editBebida{
 			display: inline-block;
-			width: 170px;
+			width: 160px;
 		}
 
 footer{
